@@ -1,0 +1,82 @@
+.sideLine-container{
+    margin-left: 10.375rem;
+    border-left: 3px #e0e0e0 solid;
+    padding: 0rem 8rem 3rem 6rem;
+    position: relative;
+    min-height: 200px;
+}
+
+.arrow-container{
+	border-left: none;
+}
+
+.sideLine-icon{
+    position: absolute;
+    left: -32px;
+    top: 0px;
+    cursor: default;
+}
+
+.sideLine-description-pic{
+    position: relative;
+    padding: 1px 40px 30px 40px;
+    background-color: #FFF;
+    -moz-box-shadow: 3px 3px 5px 0px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 0px #ccc;
+    box-shadow: 3px 3px 5px 0px #ccc;
+   	cursor: pointer;
+}
+    
+    .sideLine-description-pic figure img{
+        width: 100%;
+    }
+    
+.sideLine-description{
+	position: relative;
+	padding: 1px 40px 30px 40px;
+	background-color: #2d3642;
+    -moz-box-shadow: 3px 3px 5px 0px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 0px #ccc;
+    box-shadow: 3px 3px 5px 0px #ccc;
+}
+
+
+	.sideLine-description p{
+		color: #fff;
+	}
+	
+	.sideLine-description h3{
+		color: #fff;
+	}
+
+.lar-sideLine-arrow {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    position: absolute;
+    left: -10px;
+    top: 20px;
+}
+
+	.lar-sideLine-arrow-white{
+		border-right: 10px solid #FFF;
+	}
+	
+   .lar-sideLine-arrow-blue{
+        border-right: 10px solid #2d3642;
+    }
+    
+.sideLine-introContent{
+	margin-top: 20px;
+    border-top: 1px solid #f2f1f1;
+    padding-top: 20px;
+}
+
+.sideLine-arrow{
+	
+}
+
+@media screen and (max-width: 767px) {
+    
+}

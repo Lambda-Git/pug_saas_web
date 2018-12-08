@@ -1,0 +1,38 @@
+// 更多按钮
+.btn{
+   width:100%; margin:0 auto; margin-top:50px;
+   .btn_more{
+   color:#000; border:1px solid #000; background-color: none; padding:15px 110px; text-decoration: none;
+   &:hover{ background-color:$color-yellow; text-decoration: none; border: none;}
+   &:active{ opacity:0.5; border: none;}
+  }
+}
+// 下拉按钮
+.btn_dropDown{
+   width: 100%; text-align:center; margin-top: 50px;
+   button{
+      width: 70px; height:35px; margin-left:auto; margin-right:auto; background-position:-328px -325px;
+      &:hover{ background-position:-408px -325px; border: none;}
+      &:active{ opacity:0.5; border: none;}
+   }
+}
+// 阅读下载
+.btn_readDownload{
+   font-size: $font-mobile-28; margin:0 35px; padding:8px 20px; color:$color-periodicals-deepBlue; border:1px solid $color-periodicals-deepBlue; background-color:#fff;
+   &:hover{ background-color:$color-periodicals-lightBlue; color:#fff;}
+   &:active{ opacity:0.5;}
+}
+// 数字图书馆
+.btn_library{
+   width: 220px; height: 60px; background-position: -490px -1235px;
+}
+
+.btn_inquire{
+   color:#fff; font-size: $font-mobile-28; border:1px solid $color-periodicals-deepBlue; background-color:$color-periodicals-lightBlue; padding:10px 35px;
+   &:hover{ background-color:$color-periodicals-lightBlue; color:#fff;}
+   &:active{ opacity:0.5;}
+}
+@media (min-width : 768px ){
+   .btn_readDownload{ font-size: $font-pc-18; margin:0 15px;}
+   .btn_inquire{ font-size: $font-pc-20;}
+}

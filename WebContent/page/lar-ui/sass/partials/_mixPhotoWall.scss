@@ -1,0 +1,76 @@
+/* ==========================================================================
+   lay-ui mixPhotoWall组件
+   ========================================================================== */
+
+.mixPhotoWallContainer{
+    /* height: 400px; */
+}
+.mixPhoteWallWrapper{
+    height: 100%;
+    width: 100%;
+    padding: 5px 0;
+}
+
+.mixPhoteWallWrapper .smallArea , .mixPhoteWallWrapper .bigArea{
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+   
+.mixPhoteWallWrapper .smallArea .mixPhotoWallImageContainer{
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    float: left;
+    position: relative;
+}  
+   
+.mixPhoteWallWrapper .bigArea .mixPhotoWallImageContainer{
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    float: left;
+    position: relative;
+}
+
+.mixPhoteWallTextBg{
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0px;
+}   
+
+.mixPhoteWallText{
+    background-color: rgba(0,0,0,.4);
+    height: 35px;
+    margin: 10px;
+    color: white;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.smallArea .mixPhotoWallImageContainer img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer; 
+}
+
+.bigArea .mixPhotoWallImageContainer img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.mixPhotoWallImageContainer:hover{
+	box-shadow: 1px 1px 5px #333;
+}  
+@media screen and (max-width: 767px) {
+     .mixPhoteWallWrapper .smallArea , .mixPhoteWallWrapper .bigArea{
+        width: 100%;
+     } 
+     
+     .smallArea .mixPhotoWallImageContainer img , .bigArea .mixPhotoWallImageContainer img{
+        width: 100%;
+        height: 100%;
+     }
+}

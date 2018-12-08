@@ -1,0 +1,722 @@
+/* ==========================================================================
+   lay-ui header
+   ========================================================================== */
+.header_primary {
+    z-index: 2000px;
+    .container{ position: relative;}
+    height: 90px; background-color: #212933; border-bottom: 2px solid #12171c; position: relative;
+    .navbar-brand{ display:block; width:165px; height:87px; margin-top:0; position: absolute; left: 0;}
+    .navbar-brand img{ width:100%;}
+    .logo-lar{display:none;}
+    .icon-bar{ background-color: #fff;}
+    .navbar-toggle{ padding: 28px 5px; position: absolute; right: 0;}
+    .navbar-nav{ margin:0 -15px;}
+    .navbar-collapse{ position: absolute; z-index: 2000; width: 100%; top: 89px;}
+    
+    .nav>li>a{ color: #ffffff; padding: 8px 10px; border: 1px solid #212933; background-color: #212933;}
+    .nav>li>a:visited{ background-color: #212933;}
+    .nav>li>a:hover{ color: $color-encyclopedia-lightPurple; border: 1px solid $color-encyclopedia-lightPurple; background-color: #212933;}
+    .nav>li>a:active{ background-color: #212933;}
+    .info{ margin-left:0;}
+    .userInfo{ display: none;}
+    // search
+    .search-xs{ display:block;}
+    .search-md{ display:none;}
+    .input-search{ width: 35%; margin-top: 28px; z-index: 2000; position: absolute; right: 60px;}
+    .form-control{ height: 34px; padding: 3px 6px; background-color: #424951; border-radius:0; font-size: 0.8em; border-color:#424951; color: #ccc;}
+    .input-group-btn:last-child>.btn{ margin-top: -1px; background-color: #424951; border-radius:0;}
+    .btn-default{ border-color:#424951; height:34px;}
+    .glyphicon-search{ color: $color-white;}
+}
+
+
+/* encyclopedia（百科）*/
+.header_theme_encyclopedia{
+    .nav>li>a{}
+    .nav>li>a:hover{ color: $color-encyclopedia-lightPurple; border: 1px solid $color-encyclopedia-lightPurple;}
+    .nav>li>a.encyclopediaActive{color: $color-encyclopedia-lightPurple; border: 1px solid $color-encyclopedia-lightPurple;}
+}
+/* periodicals（期刊）*/
+.header_theme_periodicals{
+    .nav>li>a{}
+    .nav>li>a:hover{ color: $color-periodicals-lightBlue; border: 1px solid $color-periodicals-lightBlue;}
+    .nav>li>a.periodicalActive{color: $color-periodicals-lightBlue; border: 1px solid $color-periodicals-lightBlue;}
+}
+/* activity（活动）*/
+.header_theme_activity{
+    .nav>li>a{}
+    .nav>li>a:hover{ color: $color-activity-lightYellow; border: 1px solid $color-activity-lightYellow;}
+    .nav>li>a.activityActive{color: $color-activity-lightYellow; border: 1px solid $color-activity-lightYellow;}
+}
+/* award（奖节）*/
+.header_theme_award{
+    .nav>li>a{}
+    .nav>li>a:hover{ color: $color-award-lightRed; border: 1px solid $color-award-lightRed;}
+    .nav>li>a.awardActive{color: $color-award-lightRed; border: 1px solid $color-award-lightRed;}
+}
+/* news（新闻资讯）*/
+.header_theme_news{
+    .nav>li>a{}
+    .nav>li>a:hover{ color: $color-news-lightBlue; border: 1px solid $color-news-lightBlue;}
+    .nav>li>a.newsActive{color: $color-news-lightBlue; border: 1px solid $color-news-lightBlue;}
+}
+/* artist（艺术家）*/
+.header_theme_artist{
+	.nav>li>a{}
+    .nav>li>a:hover{ color: #fd1444; border: 1px solid #fd1444;}
+    .nav>li>a.artistActive{color: #fd1444; border: 1px solid #fd1444;}
+}
+/* organization（组织团体）*/
+.header_theme_organization{
+    .nav>li>a{}
+    .nav>li>a:hover{ color: $color-organization-lightOrange; border: 1px solid $color-organization-lightOrange;}
+    .nav>li>a.organizationActive{color: $color-organization-lightOrange; border: 1px solid $color-organization-lightOrange;}
+}
+.header_theme_organization_home{
+/*    .nav>li>a.organizationActive{color: $color-organization-lightOrange; border: 1px solid $color-organization-lightOrange;}*/
+    .nav>li>a.organizationActive{ color: $color-encyclopedia-lightPurple; border: 1px solid $color-encyclopedia-lightPurple; background-color: #212933;}
+}
+/* opus（作品）*/
+.header_theme_opus{
+    .nav>li>a{}
+    .nav>li>a:hover{ color: $color-opus-lightGreen; border: 1px solid $color-opus-lightGreen;}
+    .nav>li>a.opusActive{color: $color-opus-lightGreen; border: 1px solid $color-opus-lightGreen;}
+}
+
+@media (min-width: 767px) {
+    .header_primary {
+        .navbar-brand{ display: none;}
+        .logo-lar{display: block; margin:0 auto; position: absolute; left: 0; right: 0;}
+        .nav{ margin-top: 30px;}
+        .info{ margin-left:200px;}
+        .nav>li>a{font-size:12px; padding: 6px 10px;}
+        .navbar-nav{ width: inherit; top: 0;}
+        .nav>li.userinfo{ display: none;}
+        .navbar-collapse{top: 0;}
+        // search
+        .search-xs{ display:none;}
+        .search-md{ display:block;}
+        .input-search{ width: 25%; float:right;}
+        .form-control{ background-color: #212933; border-color:#fff;}
+        .input-group-btn:last-child>.btn{ background-color: #212933;}
+        .btn-default{ border-color:#fff;}
+        .userInfo{
+            font-size: 12px;
+            display: block;
+            position: absolute;
+            right: -25px;
+            top: 85px;
+            background-color: #212a33;
+            padding: 10px 13px 7px 13px;
+            border-radius: 5px;
+            span{ color: #23527c;}
+            span.sep{ margin: 0 5px;}
+            a:hover{ text-decoration: underline;}
+        }
+    }
+}
+
+@media (max-width: 374px){
+    .header_primary{
+        .navbar-brand{ width: 150px; margin-top: 5px;}
+    }
+}
+
+/* ==========================================================================
+   lay-ui 头部 banner样式
+   ========================================================================== */
+/* banner样式1 作为图片出现，不嵌套组件，mobile和pc自适应 */
+.banner{
+    img{ width:100%;}
+}
+@media (min-width: 767px){}
+
+/* banner样式2 作为背景出现，嵌套组件，mobile和pc不自适应 */
+/* 奖节 雪山 */
+.banner_bg_mountian{
+    height:590px; background: url(../images/common/banner_mountain_width.jpg) center no-repeat;
+}
+/* 新闻 蓝天白云 */
+.banner_bg_news{
+    height:680px; background: url(../images/common/banner_clouds_width.jpg) center no-repeat;
+}
+/* 百科 海浪 */
+.banner_bg_bk{
+    height:680px; background: url(../images/common/banner_wave_width.jpg) center no-repeat;
+}
+@media (min-width: 767px){}
+
+/* ==========================================================================
+   lay-ui  奖节头部  Award
+   ========================================================================== */
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
+    margin-right: 0;
+}
+.header-prize{
+    .container{
+        position: relative;
+        .navbar-collapse{ margin-right: 0; width: 100%;}
+    }
+    .navbar-collapse{
+        position: absolute; bottom: inherit; margin-right: 0; z-index: 2000; margin-top: -2px;
+    }
+    img{ width:100%;}
+    .navbar-toggle{ position: absolute; top: 50px; right: 0px; padding: 5px;}
+    .icon-bar{ background-color: #fff;}
+    .navbar-nav{ z-index: 1000; top: 0;}
+    p{ display:block; color: #fff; height:24px; overflow: hidden; margin-top: 20px;padding:3px 0;float:right;}
+}
+@media (min-width: 767px){
+    .header-prize{
+       .navbar-collapse{
+            bottom: -47px;
+        }
+       .navbar-header{ width: 100%;}
+       .navbar-toggle{ display:none;}
+       .nav{ margin-top:5px;}
+       .navbar-nav{ position: relative;}
+       .navbar-nav > li > a{ line-height: 14px;}
+        p{ right: 15px; bottom: 0;}
+    }
+    .nav-prize{ width:100%; height:47px;}
+}
+
+@media (max-width: 374px){
+    .header-prize{
+        .navbar-toggle{ right: 0;}
+    }
+}
+
+/* 中国戏剧梅花奖 */
+.header-prize-plum{
+    background: url(../images/common/bg-prize-plum.jpg) no-repeat;
+    background-size: cover;
+    .navbar-brand{
+        width: 100%; height:auto; background: url(../images/common/logo-prize-plum.png) no-repeat; padding: 30px 60px 0 85px;
+        img{ height: 100%;}
+        i{ color: #fcd800; font-size: 24px; font-weight: bold; line-height: 1.2;}
+    }
+    .nav{ border-top:3px solid #784aa4; margin-top: 0;}
+    .nav>li>a{ background-color:#8c63b3; height:44px; color:#fff;}
+    .nav>li>a:hover{ background-color:#784aa4;}
+    }
+@media (min-width: 767px) {
+    .header-prize-plum{
+        .logo{ width:65%;}
+        .navbar-brand{
+            padding: 35px 0 0 85px; 
+            i{ font-size: 36px;}
+            .nav{ border-top:3px solid #784aa4; margin-top: 125px;}
+        }
+    }
+    .nav-prize-plum{ background-color:#8c63b3; border-top:3px solid #784aa4;}
+}
+
+/* 金鸡电影百花奖 */
+.header-prize-rooster{
+    background: url(../images/common/bg-prize-rooster.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .navbar-brand{
+        width: 100%; height: auto; padding: 30px 30px 0 40px; 
+        i{ color: #ffd800; font-size: 24px; font-weight: bold; line-height: 1.2;}
+    }
+    .nav{ border-top:3px solid #890231;}
+    .navbar-collapse{ margin-top: -10px;}
+    .nav>li>a{ background-color:#ac003c; height:44px; color:#fff;}
+    .nav>li>a:hover{ background-color:#890231;}
+    .nav>li>a:active{ background-color:#890231;}
+    }
+@media (min-width: 767px) {
+    .header-prize-rooster{
+        .navbar-brand{
+            padding: 35px 0 0 15px; 
+            i{ font-size: 36px;}
+        }
+        .navbar-collapse{ margin-top: 0;}
+        .navbar-nav{ margin-top: 0;}
+        .nav{ border-top:3px solid #890231;}
+    }
+    .nav-prize-rooster{ background-color:#ac003c; border-top:3px solid #890231;}
+}
+
+
+/* ==========================================================================
+   lay-ui  组织机构头部  Organization
+   ========================================================================== */
+.header-organization, .header-artist{
+    width: 100%; height: 300px; background: url(../images/common/banner_organization_2.jpg) center no-repeat;
+    .userInfo{
+    	display: none;
+    	}
+    .nav-org{
+        width: 100%; height: 88px; background-color: rgba(0,0,0,0.8);
+        .container{
+            height: 88px; position: relative;
+            img.logo{ width: 190px; height: 60px; position: absolute; top: 50%; left: 0; margin-top:-32px;}
+            .search{
+                height: 88px; width: 120px; float: right; padding-left: 0; padding-right: 0;
+                .input-group{
+                    position: absolute; top: 50%; margin-top: -17px;
+                    .btn{ margin-top:-1px; border: none; padding: 7px 12px;}
+                    .btn-default{ color: $color-organization-lightOrange; background-color: rgba(225,225,225,0.5);}
+                    .form-control{ background-color: rgba(225,225,225,0.5); border: none; color: $color-organization-lightOrange;}
+                    .input-group-btn:last-child > .btn{ margin-left: 0;}
+                }
+            }
+            #bs-navbar{
+                float: left; 
+                .navbar-collapse{ padding-right: 0;}
+                .navbar-nav{ margin: 7px 0 0 0; top: 88px; left: 0; position: absolute; top: 81px; background-color: #333; width: 100%;}
+                ul li:hover{ text-decoration: underline;}
+                .nav>li>a{ color: $color-organization-lightOrange; background-color: none;}
+                .nav>li>a:hover{ color: $color-organization-lightOrange; background-color: rgba(225,225,225,0);}
+            }
+            .navbar-toggle{
+                padding: 28px 0 0 10px; margin-right: 0;
+                .icon-bar{ background-color: #fff;}
+            }
+        }
+    }
+}
+@media (min-width: 767px){
+    .header-organization, .header-artist{
+        height: 478px;
+        .userInfo{
+        	display: block;
+            font-size: 12px;
+            position: absolute;
+            right: 0;
+            top: 25px;
+            padding: 0 13px 0 13px;
+            border-radius: 5px;
+            span{ color: #23527c;}
+            span.sep{ margin: 0 5px;}
+            a:hover{ text-decoration: underline;}
+        }
+        .nav-org{
+            height: 65px;
+            .container{
+                padding: 0;
+                img.logo{ margin-top: -45px;}
+                .search{
+                    height: 65px; width: 160px; position: absolute; right: 185px;
+                }
+                #bs-navbar{
+                	float: right;
+                    .navbar-nav{ 
+                    	display: block; 
+                    	background-color: rgba(0,0,0,0); 
+                    	position: relative; 
+                    	top: 0; 
+                    	right: 0;
+                    	li:first-child a{width: 100px; overflow: hidden; text-overflow: ellipsis; text-align: right;}
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 374px){
+    .header-organization, .header-artist{
+        .nav-org{
+            .container{
+                img.logo{ width: 170px; height: 50px; margin-top: -25px;}
+            }
+        }
+    }
+}
+/* ==========================================================================
+   lay-ui  艺术家馆头部  header-artist
+   ========================================================================== */
+.header-artist{
+	width: 100%; height: 400px; background: url(../images/common/banner-artistMuseum.jpg) center no-repeat;
+	.tit-artist{
+	    text-align: center;
+        font-size: 48px;
+        color: #fff;
+        font-weight: bold;
+        padding: 100px 0 0 0;
+        -moz-opacity:0.8;
+	}
+}
+@media (min-width: 767px){
+    .header-artist{
+        height: 699px;
+    }
+}
+/* ==========================================================================
+   lay-ui  中华文艺资源数据库头部  database
+   ========================================================================== */
+.header-database{ 
+    height: 86px; background-color: #212a33;
+    .container{
+        padding: 0 0 0 0; position: relative; height: 100%;
+        .navbar-brand{
+            width: 175px; height: 87px;
+            img{ width: 100%;}
+        }
+        .navbar-nav{ top: 86px;}
+        .navbar-nav li a{ color: #fff; background-color: #212a33; padding: 15px 10px;}
+        .navbar-nav li a:hover{ background-color: rgba(0,0,0,0); text-decoration: underline;}
+        .logoPc{ display: none;}
+        .navbar-toggle{ display: block; padding: 26px 0px;}
+        .icon-bar{ background-color: #fff;}
+        .navbar-collapse{ position: absolute; z-index: 2000; width: 100%; top: 86px; margin-left: 0; padding-left: 0;}
+        .search{
+             width: 135px; height: 32px; border: 1px solid rgba(255,255,255,0.5); position: absolute; top: 28px; right: 55px;
+             input{ width: 100%; height: 32px; background: rgba(0,0,0,0); border:none;}
+             .btn{ position: absolute; width: 30px; height: 30px; right: 0; margin-top: 0; border: none; padding: 0; border-radius: 0; background-color: none;}
+             .btn-default{ background-color: rgba(0,0,0,0); border-color: none; color: #fff;}
+             .glyphicon{ top: 0;}
+        }
+    }
+}
+@media (min-width: 767px){
+    .header-database{
+        height: 228px;
+        background: rgba(0,0,0,0);
+       .container{
+            padding: 45px 0 0 0;
+            .navbar-brand{ display: none;}
+            .navbar-nav li a{ padding-top: 5px; padding-bottom: 5px; background: rgba(0,0,0,0);}
+            .nav li a{ padding: 5px 15px;}
+            .logoPc{ position: absolute; display: block; width: 300px; height: 135px; margin: 0 auto; left: 0; right: 0;}
+            .navbar-toggle{ display: none;}
+            .navbar-collapse{
+                position: absolute; right: 0; top: 40px; width: 140px;
+            }
+            .search{ right: 145px; top: 40px;}
+       } 
+    }
+}
+
+@media (max-width: 374px){
+    .header-database{
+        .container{
+            .navbar-brand{
+                width: 155px; margin-left: 10px;
+            }
+            .search{ width: 115px; top: 26px;}
+        }
+    }
+}
+
+/* ==========================================================================
+   lay-ui  新闻资讯头部  News
+   ========================================================================== */
+.headerNews{
+    height: 86px; background-color: #212a33; border-bottom: 2px solid #12171c;
+    .container{ position: relative;}
+    .navbar-header{ display: block;}
+    .banner-news-mobile{ display: block; height:285px; width: 640px; background-color: #ccc;}
+    .headerNews-pc{ display: none;}
+    .navbar-brand img{ width:100%;}
+    .navbar-brand{ display:block; width:170px; height:87px; top:0; position: absolute; left: 0;}
+    .logo-lar{display:none;}
+    .icon-bar{ background-color: #fff;}
+    .navbar-toggle{ padding: 28px 5px; position: absolute; right: 0;}
+    .navbar-nav{ margin:0 -15px; }
+    .navbar-collapse{ position: absolute; z-index: 2000; width: 100%; top: 85px;}
+    
+    .nav>li>a{ color: #ffffff; padding: 8px 10px; border: 1px solid #212933; background-color: #212933;}
+    .nav>li>a:visited{ background-color: #212933;}
+    .nav>li>a:hover{ color: $color-encyclopedia-lightPurple; border: 1px solid $color-encyclopedia-lightPurple; background-color: #212933;}
+    .nav>li>a:active{ background-color: #212933;}
+    .info{ margin-left:0;}
+    // search
+    .search-xs{ display:block;}
+    .search-md{ display:none;}
+    .input-search{ width: 35%; margin-top: 28px; z-index: 2000; position: absolute; right: 60px;}
+    .form-control{ height: 34px; padding: 3px 6px; background-color: #424951; border-radius:0; font-size: 0.8em; border-color:#424951; color: #ccc;}
+    .input-group-btn:last-child>.btn{ margin-top: -1px; background-color: #424951; border-radius:0;}
+    .btn-default{ border-color:#424951; height:34px;}
+    .glyphicon-search{ color: $color-white;}
+}
+.banner-headerNews{
+    height: 285px; background: url(../images/common/banner-newsmobile.png) center no-repeat;
+}
+@media (min-width: 767px){
+    .headerNews{
+        height: 270px; background: url(../images/common/banner-headernews.jpg) center no-repeat;
+        .navbar-header{ display: none;}
+        .banner-news-mobile{ display: none;}
+        .navbar-nav{ position: inherit; width: inherit;}
+        #bs-navbar{
+            float: right;
+            a{ color: #fff;}
+            .nav>li>a{ color: #fff; padding: 15px; border: none; background-color: rgba(0,0,0,0);}
+            a:hover{ background: rgba(0,0,0,0); text-decoration: underline;}
+        }
+    }
+    .banner-headerNews{ display: none;}
+}
+
+@media (max-width: 374px){
+    .headerNews{
+        .navbar-brand { width: 155px; top: 5px;}
+    }
+}
+
+/* ==========================================================================
+   lay-ui  智慧文艺头部  Wisdom
+   ========================================================================== */
+.headerWisdom{
+    height: 205px; background: url(../images/common/bg-wisdom.jpg) center no-repeat;
+    .container{ position: relative; height: 100%;}
+    .logo{ width: 300px; height: 150px; position: absolute; margin: 0 auto; left: 0; right: 0; top: 50%; margin-top: -75px;}
+    nav{
+        position: absolute; right: 0;
+        ul li{ float: left;}
+        ul li a{ color: #fff;}
+        ul li a:hover{ color: #fff; text-decoration: underline; background: none;}
+    }
+}
+@media (min-width: 767px){
+    .headerWisdom{
+        height: 238px;
+    }
+}
+
+
+/* ==========================================================================
+   lay-ui  导航头部
+   ========================================================================== */
+$onePCCol:80px;
+$twoPCCol:164px;
+$onePhoneCol:45px;
+$twoPhoneCol:94px;
+/*头部作品类型导航*/
+.localBanner{
+  background: url('../images/common/1.jpg');
+  width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: border;
+  .header{
+    .opusLogo{
+      width:250px;
+    }
+    .opusNavBarContainer{
+      .opusNavBarRow{
+        margin-bottom: 4px;
+        .opusNavBar{
+          cursor: pointer;
+          //border: 2px solid #379082;
+          border-radius: 5px;
+          display:inline-block;
+          vertical-align:middle;
+          text-align: center;
+          position: relative;
+          filter:alpha(opacity=80);
+          -moz-opacity:0.8;
+          -khtml-opacity: 0.8;
+          opacity: 0.8;
+          .imgInfo{
+            display:inline-block;
+            margin-top: 4px;
+            img{
+              width:90%;
+            }
+          }
+          .textInfo{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            span{
+              //font-size: 14px;
+              text-align: right;
+              color: #FFFFFF;
+            }
+          }
+        }
+        .literatureOpus{
+          background: #37ca37;
+          border:2px solid #37ca37;
+        }
+        .dramaOpus{
+          background: #d73853;
+          border:2px solid #d73853;
+        }
+        .musicOpus{
+          background: #ffad00;
+          border:2px solid #ffad00;
+        }
+        .photoOpus{
+          background: #95a5a6;
+          border:2px solid #95a5a6;
+        }
+        .movieOpus{
+          background: #1bce99;
+          border:2px solid #1bce99;
+        }
+        .calligraphyOpus{
+          background: #34495e;
+          border:2px solid #34495e;
+        }
+        .folkartOpus{
+          background: #977655;
+          border:2px solid #977655;
+        }
+        .televisionOpus{
+          background: #3498db;
+          border:2px solid #3498db;
+        }
+        .commentOpus{
+          background: #8973cf;
+          border:2px solid #8973cf;
+        }
+        .danceOpus{
+          background: #9b59b6;
+          border:2px solid #9b59b6;
+        }
+        .civilArtOpus{
+          background: #e67e22;
+          border:2px solid #e67e22;
+        }
+        .artOpus{
+          background: #58baff;
+          border:2px solid #58baff;
+        }
+        .acrobaticsOpus, .acrobaticsOpusSmall{
+          background: #e74c3c;
+          border:2px solid #e74c3c;
+        }
+        .worksOpus{
+          background: #fff000;
+          border:2px solid #fff000;
+        }
+      }
+    }
+  }
+}
+.localBanner_opus{
+  background: url('../images/common/1.jpg');
+}
+.localBanner_award{
+  background: url('../images/common/2.jpg');
+}
+.localBanner_artist{
+  background: url('../images/common/3.jpg');
+}
+.localBanner_activity{
+    background: url('../images/common/4.jpg');
+}
+
+.searchHeader{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.searchHeader .row {
+	margin-right: 0;
+    margin-left: 0;
+}
+
+.header_search_activity{
+    background: url('../images/common/banner_activity_1.jpg');
+}
+.header_search_award{
+    background: url('../images/common/banner_award_1.jpg');
+}
+.header_search_organization{
+    background: url('../images/common/banner_organization_3.jpg');
+}
+.header_search_opus{
+    background: url('../images/common/banner_opus.jpg');
+}
+.header_search_artist{
+    background: url('../images/common/banner_artist_1.jpg');
+}
+@media (min-width: 768px) {
+  /*头部作品类型导航-PC端*/
+  .localBanner{
+    height:470px;
+    .header{
+      display: table;
+      position: relative;
+      margin: 0 auto;
+      padding-top: 115px;
+      .opusLogo{
+        /*position: absolute;
+        top:250px;
+        left:225px;*/
+        display: table-cell;
+        vertical-align: middle;
+        padding-right: 70px;
+        img{
+          width:250px;
+        }
+      }
+      .opusNavBarContainer{
+        /*position: absolute;
+        top:190px;
+        left:570px;*/
+        display: table-cell;
+        vertical-align: middle;
+        .opusNavBarRow{
+          margin-bottom: 4px;
+          .opusNavBar{
+            width:$onePCCol;
+            height:$onePCCol;
+            border-radius: 5px;
+            .imgInfo{
+              width:64px;
+              height:64px;
+              margin-top: 4px;
+            }
+          }
+          .opusNavBar:hover{
+            .textInfo{
+              display: inline-block;
+            }
+          }
+          .musicOpus,.calligraphyOpus,.commentOpus,.artOpus,.acrobaticsOpus{
+            width:$twoPCCol;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  /*头部作品类型导航-手机端*/
+  .localBanner{
+    height:370px;
+    text-align: center;
+    .header{
+      .opusLogo{
+        width:180px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 15px;
+      }
+      .opusNavBarContainer{
+        margin-top: 30px;
+        .opusNavBarRow{
+          margin-bottom: 4px;
+          .opusNavBar{
+            cursor: pointer;
+            width:$onePhoneCol;
+            height:$onePhoneCol;
+            border-radius: 5px;
+            .imgInfo{
+              width:40px;
+              height:40px;
+              display:inline-block;
+              margin-top: 0px;
+            }
+            .textInfo{
+	            display: none;
+	        }
+          }
+          .musicOpus,.calligraphyOpus,.commentOpus,.artOpus,.acrobaticsOpus{
+            width:$twoPhoneCol;
+          }
+        }
+      }
+    }
+  }
+}

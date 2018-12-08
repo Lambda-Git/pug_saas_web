@@ -1,0 +1,171 @@
+/* ==========================================================================
+   lay-ui 时间轴2组件样式
+   ========================================================================== */
+
+.lar-opusCatalogNav-container{
+    border-left: 2px solid #DDD;
+    width: 270px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.lar-opusCatalogNav-block{
+    position: relative; 
+}
+
+.lar-opusCatalogNav-roundIcon{
+	border-radius: 50%;
+	box-shadow: 0 0 0 2px #ddd, inset 0 1px 0 rgba(0, 0, 0, 0.08), 0 1px 0 1px rgba(0, 0, 0, 0.05);
+    width: 10px;
+    height: 10px;
+    margin-left: -6px;
+    
+}
+
+.lar-opusCatalogNav-roundIcon.lar-catelogNav-iconTop{
+	margin-top: -10px;
+}
+    
+.lar-opusCatalogNav-roundIcon.lar-catelogNav-iconBottom{
+    margin-bottom: -10px;
+}
+
+.lar-opusCatalogNav-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+}
+
+.lar-opusCatalogNav-figure{
+	float: left;
+	margin-right: 15px;
+}
+
+.lar-opusCatalogNav-figure img{
+    height: 160px;
+    width: 120px;	
+}
+
+.lar-opusCatalogNav-article{
+	text-align: left;
+	
+	p{
+		margin-left: 17px;
+		margin-bottom: 0px;
+		display: none;
+	}
+	p:hover{
+	   cursor: pointer;
+	}
+}
+
+.lar-opusCatalogNav-title{
+	margin-top: 0px;
+}
+
+.lar-opusCatalogNav-title:hover{
+    cursor: pointer;
+}
+
+.lar-opusCatalogNav-icon{
+    cursor: pointer;
+    background-color: #c2c4c4;
+}
+
+.lar-opusCatalogNav-block:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lar-opusCatalogNav-more{
+    position: absolute;
+    right: 25px;
+    bottom: 15px;	
+}
+
+.artist_info_more_right, .artist_info_more_left{
+    margin-top: 10px;   
+}
+
+.lar-opusCatalogNav-more-arrow{
+	margin-top : 30px;
+}
+
+/* 平板 + 普通PC桌面 + 大分辨率PC桌面 */
+@media (min-width: 768px) {
+     .lar-opusCatalogNav-img{
+        width: 10px;
+        height: 10px;
+        margin-left: -6px;
+        margin-top: 15px;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+    
+    .lar-opusCatalogNav-content{
+        width: 95%;
+        position: relative;
+        padding: 0px 10px;
+        margin-top: 10px;
+        float: right;
+    }
+    
+    .lar-opusCatalogNav-arrow{
+        width: 0; 
+	    height: 0; 
+	    border-top: 10px solid transparent;
+	    border-bottom: 10px solid transparent; 
+	    border-right:10px solid  #c2c4c4; 
+	    position: absolute;
+	    left: -10px;
+    }
+    
+    .lar-opusCatalogNav-paragraph{
+	    height: 112px;
+	    overflow: hidden;
+	}
+}
+/* 手机 */
+@media screen and (max-width: 767px) {
+	.lar-opusCatalogNav-container{
+	}
+	
+	.lar-opusCatalogNav-img{
+        width: 10px;
+        height: 10px;
+        margin-left: -6px;
+        margin-top: 30px;
+        -webkit-transform: translateZ(0);
+        -webkit-backface-visibility: hidden;
+    }
+    
+    .lar-opusCatalogNav-content{
+        width: 95%;
+        position: relative;
+        padding: 15px 25px;
+        margin-top: 10px;
+        border: 1px solid #c2c4c4;
+        float: right;
+    }
+    
+    .lar-opusCatalogNav-arrow{
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent; 
+        border-right:10px solid  #c2c4c4; 
+        position: absolute;
+        left: -10px;
+    }
+    
+    .lar-opusCatalogNav-paragraph{
+        height: 84px;
+        overflow: hidden;
+    }
+    
+     .lar-opusCatalogNav-more{
+        margin-bottom: -12px;
+    }
+    
+}

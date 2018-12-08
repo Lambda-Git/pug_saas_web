@@ -1,0 +1,485 @@
+@charset "UTF-8";
+/* ==========================================================================
+   lar-ui Public
+   ========================================================================== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑"; }
+
+.icon {
+  background: url(./images/icon/icon.png); }
+
+button {
+  border: none; }
+
+ul li {
+  list-style: none; }
+
+@media (min-width: 768px) {
+  /*登陆登出样式*/
+  .header-database .container .nav li #logout {
+    padding-left: 0px; }
+  .userIcon, .logoutIcon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url("./images/icon/icon.png"); }
+  .userName, .logoutName {
+    display: none; }
+  .userIcon {
+    background-position: -84px -73px; }
+  .logoutIcon {
+    background-position: -157px -73px;
+    width: 20px;
+    margin-right: 20px; }
+  ul li.set {
+    display: none; } }
+
+/*  lar-ui-style  第一遍切图专用 */
+.adap img {
+  width: 100%; }
+
+.center {
+  margin: 0 auto; }
+
+.hidden {
+  overflow: hidden;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+/* ==========================================================================
+   lay-ui Font
+   ========================================================================== */
+/* ==========================================================================
+   lay-ui selectDict组件
+   ========================================================================== */
+.lar-selectDict {
+  width: 100%;
+  min-width: 5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  background: #f4f4f4;
+  border: 1px solid #d7d7d7; }
+
+.lar-spin {
+  -webkit-animation: lar-spin 2s infinite linear;
+  animation: lar-spin 2s infinite linear; }
+
+/* ==========================================================================
+   lar-dynamicPage组件
+   ========================================================================== */
+/* ==========================================================================
+   lay-ui lar-dynamicPage组件样式
+   ========================================================================== */
+.lar-dynamicPage .resultList {
+  padding: 0px;
+  margin: 12px 0px 0px 0px; }
+
+.lar-dynamicPage .loadAll {
+  text-align: center;
+  color: #666;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none; }
+
+.lar-dynamicPage .resultList .tipNoData {
+  text-align: center; }
+
+.lar-dynamicPage .resultList li, .lar-dynamicPage .pagesList li {
+  list-style-type: none;
+  position: relative;
+  padding: 0px 0px 0px 56px;
+  font-family: "Microsoft YaHei"; }
+
+.lar-dynamicPage .resultList li em {
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  /* width: 3.5em; */
+  padding: 0px 10px;
+  display: inline-block;
+  font-size: 29px;
+  font-style: normal;
+  color: #999999; }
+
+.lar-dynamicPage .resultList li a {
+  width: 128px;
+  display: inline-block;
+  color: #999;
+  line-height: 32px;
+  vertical-align: top; }
+
+/*页码区*/
+.lar-dynamicPage {
+  box-sizing: content-box; }
+
+.lar-dynamicPage .pagesList {
+  padding-left: 0px;
+  margin-top: 16px;
+  display: inline-block;
+  width: 100%; }
+
+.lar-dynamicPage .pagesList .liList {
+  /*display:inline-block;*/
+  text-align: center; }
+
+.lar-dynamicPage .pagesList li {
+  float: left;
+  display: inline;
+  width: 20px;
+  text-align: center;
+  font-family: "Droid Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 12px;
+  margin: 6px;
+  height: 12px;
+  line-height: 12px;
+  border: 1px solid #cd8802;
+  border-radius: 3px;
+  color: #7d7d7d;
+  box-sizing: content-box; }
+
+.lar-dynamicPage .pagesList li:hover {
+  cursor: pointer; }
+
+.lar-dynamicPage .pagesList li.more, .lar-dynamicPage .pagesList li.total, .lar-dynamicPage .pagesList li.go {
+  border: 0; }
+
+.lar-dynamicPage .pagesList li.total {
+  width: auto;
+  padding: 12px 0px;
+  margin: 0px;
+  margin-top: 8px; }
+
+.lar-dynamicPage .pagesList .pageNum:hover, .lar-dynamicPage .pagesList li.active {
+  background-color: #cd8802;
+  box-shadow: 1px 1px 1px 1px  #999;
+  color: #fdfdfd; }
+
+.lar-dynamicPage .pagesList .pageNum span:hover, .lar-dynamicPage .pagesList li.active span {
+  color: #fdfdfd; }
+
+.lar-dynamicPage .pagesList li.go {
+  width: 96px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 10px;
+  /*padding-top: 2px;*/ }
+
+.lar-dynamicPage .pagesList li span {
+  padding: 0px;
+  display: inline;
+  font-size: 16px;
+  color: #cd8802;
+  font-family: "Droid Sans","Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.lar-dynamicPage .pagesList li .pageNumber {
+  width: 40px;
+  height: 32px; }
+
+.lar-dynamicPage .pagesList li .pageNumber:focus {
+  border: 1px solid #cd8802;
+  background-color: #cd8802; }
+
+.lar-dynamicPage .pagesList li.ensure {
+  border: 1px solid #cd8802;
+  border-radius: 2px;
+  width: 48px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0px;
+  margin: 0px;
+  margin-top: 8px;
+  /*padding-top: 2px;*/ }
+
+.lar-dynamicPage .pagesList li.ensure span {
+  width: 64px;
+  height: 40px; }
+
+.lar-dynamicPage .pagesList li.ensure:hover {
+  background-color: #cd8802; }
+
+.lar-dynamicPage .pagesList li.totalNum {
+  border: none;
+  width: auto;
+  padding-top: 13px; }
+
+.lar-dynamicPage .nextPageContainer {
+  display: none; }
+
+@media (min-width: 768px) {
+  .lar-dynamicPage .nextPageContainer {
+    display: none; }
+    .lar-dynamicPage .nextPageContainer span {
+      display: none; } }
+
+@media (max-width: 768px) {
+  .lar-dynamicPage .pagesList {
+    display: none; }
+  .lar-dynamicPage .nextPageContainer {
+    display: block;
+    text-align: center;
+    position: relative; }
+  .lar-dynamicPage .nextPageContainer span.nextPageBtn {
+    display: inline-block;
+    width: 70px;
+    height: 40px;
+    margin-top: 16px;
+    background: url(../images/icon/icon.png) -404px -325px; }
+  .lar-dynamicPage .nextPageContainer span.mobilePageInfo {
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    padding-right: 15px;
+    color: #999; } }
+
+/* ==========================================================================
+   lay-ui scroll-bar组件
+   ========================================================================== */
+/* perfect-scrollbar v0.6.10 */
+.ps-container {
+  -ms-touch-action: none;
+  touch-action: none;
+  overflow: hidden !important;
+  -ms-overflow-style: none; }
+
+@supports (-ms-overflow-style: none) {
+  .ps-container {
+    overflow: auto !important; } }
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .ps-container {
+    overflow: auto !important; } }
+
+.ps-container.ps-active-x > .ps-scrollbar-x-rail,
+.ps-container.ps-active-y > .ps-scrollbar-y-rail {
+  display: block;
+  background-color: transparent; }
+
+.ps-container.ps-in-scrolling {
+  pointer-events: none; }
+
+.ps-container.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+  background-color: #999; }
+
+.ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+  background-color: #999; }
+
+.ps-container > .ps-scrollbar-x-rail {
+  display: none;
+  position: absolute;
+  /* please don't change 'position' */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  -moz-transition: background-color .2s linear, opacity .2s linear;
+  -o-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color .2s linear, opacity .2s linear;
+  bottom: 3px;
+  /* there must be 'bottom' for ps-scrollbar-x-rail */
+  height: 8px; }
+
+.ps-container > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+  position: absolute;
+  /* please don't change 'position' */
+  background-color: #aaa;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color .2s linear;
+  -moz-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+  bottom: 0;
+  /* there must be 'bottom' for ps-scrollbar-x */
+  height: 8px; }
+
+.ps-container > .ps-scrollbar-y-rail {
+  display: none;
+  position: absolute;
+  /* please don't change 'position' */
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  opacity: 0;
+  -webkit-transition: background-color .2s linear, opacity .2s linear;
+  -moz-transition: background-color .2s linear, opacity .2s linear;
+  -o-transition: background-color .2s linear, opacity .2s linear;
+  transition: background-color .2s linear, opacity .2s linear;
+  right: 3px;
+  /* there must be 'right' for ps-scrollbar-y-rail */
+  width: 8px; }
+
+.ps-container > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+  position: absolute;
+  /* please don't change 'position' */
+  background-color: #aaa;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-transition: background-color .2s linear;
+  -moz-transition: background-color .2s linear;
+  -o-transition: background-color .2s linear;
+  transition: background-color .2s linear;
+  right: 0;
+  /* there must be 'right' for ps-scrollbar-y */
+  width: 8px; }
+
+.ps-container:hover.ps-in-scrolling {
+  pointer-events: none; }
+
+.ps-container:hover.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container:hover.ps-in-scrolling.ps-x > .ps-scrollbar-x-rail > .ps-scrollbar-x {
+  background-color: #999; }
+
+.ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container:hover.ps-in-scrolling.ps-y > .ps-scrollbar-y-rail > .ps-scrollbar-y {
+  background-color: #999; }
+
+.ps-container:hover > .ps-scrollbar-x-rail,
+.ps-container:hover > .ps-scrollbar-y-rail {
+  opacity: 0.6; }
+
+.ps-container:hover > .ps-scrollbar-x-rail:hover {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container:hover > .ps-scrollbar-x-rail:hover > .ps-scrollbar-x {
+  background-color: #999; }
+
+.ps-container:hover > .ps-scrollbar-y-rail:hover {
+  background-color: #eee;
+  opacity: 0.9; }
+
+.ps-container:hover > .ps-scrollbar-y-rail:hover > .ps-scrollbar-y {
+  background-color: #999; }
+
+/* ==========================================================================
+   lay-ui integrat 
+   ========================================================================== */
+.lar-upload-multi .multi-upload {
+  width: 100%; }
+  .lar-upload-multi .multi-upload .choose-file {
+    width: 82px; }
+    .lar-upload-multi .multi-upload .choose-file button {
+      background-color: #db2033;
+      color: #FFF; }
+  .lar-upload-multi .multi-upload .file-list {
+    margin-top: 15px; }
+    .lar-upload-multi .multi-upload .file-list table {
+      color: #666; }
+      .lar-upload-multi .multi-upload .file-list table thead {
+        text-align: center;
+        /* font-size: 16px;
+				    font-weight: bold; */
+        background-color: #EEE; }
+      .lar-upload-multi .multi-upload .file-list table tr td[name=fileName] {
+        width: 90%; }
+      .lar-upload-multi .multi-upload .file-list table tr td[name=operation] {
+        width: 10%;
+        text-align: center; }
+
+@media (max-width: 768px) {
+  .lar-upload-multi .multi-upload .file-list table tr td[name=fileName] {
+    width: 80%; }
+  .lar-upload-multi .multi-upload .file-list table tr td[name=operation] {
+    width: 20%;
+    text-align: center; } }
+
+/* ==========================================================================
+   lay-ui integrat 
+   ========================================================================== */
+.larOpenAndClose {
+  width: 100%;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 10px; }
+  .larOpenAndClose span {
+    cursor: pointer;
+    color: #db2033; }
+
+/* ==========================================================================
+   lay-ui 补充
+   ========================================================================== */
+/* tablets 做，就当作平板以上的样式是统一的 */
+/*  desktop 暂时不做 */
+/* large desktop 暂时不做 */
+/*校验提示信息*/
+.error {
+  color: red;
+  font-size: 14px;
+  font-family: "宋体"; }
+
+.line-limit {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical; }
+
+.specialColumn {
+  /*display:none;*/
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #184e98; }
+  .specialColumn .specialColumnTitle {
+    width: 56px;
+    height: 232px;
+    position: absolute;
+    background: url(http://www.cflac.org.cn/sywdh/sywdh.png);
+    float: left;
+    margin: -34px 0px 0px -52px; }
+  .specialColumn .specialContent {
+    width: 950px;
+    height: 330px; }
+
+.specialFloatRight {
+  /*display:none;*/
+  width: 102px;
+  /*margin-top: 140px;*/
+  background: white;
+  top: 100px;
+  position: fixed;
+  right: 1px;
+  z-index: 10;
+  height: auto; }
+  .specialFloatRight .text {
+    background: #e6e6e6;
+    font-size: 12px;
+    padding: 7px 11px 7px 11px;
+    margin-top: 1px;
+    text-align: center; }
+  .specialFloatRight a {
+    color: #333; }
+
+@media (max-width: 1000px) {
+  .specialColumn {
+    display: none; }
+  .specialFloatRight {
+    display: none; } }
+
+@media (max-width: 767px) {
+  .searchHeader {
+    display: none; } }

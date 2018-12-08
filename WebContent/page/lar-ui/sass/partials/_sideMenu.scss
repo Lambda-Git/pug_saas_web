@@ -1,0 +1,92 @@
+@media screen and (max-width: 767px) {
+   	.lar-sideMenu a{
+   	   display: none;
+   	}
+   	
+   	.navbar-nav>li>a.lar-sideMenu-a{
+   	    display: block;
+   	}
+}
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a.lar-sideMenu-a{
+        display: none;
+    }
+    
+    .lar-sideMenu a{
+	    font-family: "微软雅黑";
+	    font-size: 14px; 
+	    color: rgb(255, 255, 255); 
+	    background-color: #4c4d51;
+	    text-align: center; 
+	    position: fixed; 
+	    left: 6%;
+	    height: 50px; 
+	    line-height: 50px; 
+	    width: 85px; 
+	    border-bottom-width: 1px; 
+	    border-bottom-color: #a58727; 
+	    border-bottom-style: solid; 
+	    display: block; 
+	    z-index: 8888; 
+	    text-decoration: none;
+	}
+
+	.lar-sideMenu .lar-active , .lar-sideMenu a:hover{
+	    background-color: #ffc000;
+	} 
+	
+	.lar-sideMenu a:nth-child(1){
+	    top: 250px; 
+	}
+	
+	.lar-sideMenu a:nth-child(2){
+	    top: 300px; 
+	}
+	
+	.lar-sideMenu a:nth-child(3){
+	    top: 350px; 
+	}
+	
+	.lar-sideMenu a:nth-child(4){
+	    top: 400px; 
+	}
+	
+	.lar-sideMenu a:nth-child(5){
+	    top: 450px; 
+	}
+	
+	.lar-sideMenu a:nth-child(6){
+	    top: 500px; 
+	}
+	
+	.lar-sideMenu a:nth-child(7){
+	    top: 550px; 
+	}
+	
+	.lar-sideMenu a:nth-child(8){
+	    top: 600px; 
+	}
+	
+	.sideLine-dot{
+	    width: 15px;
+	    height: 15px;
+	    -moz-border-radius: 50px;
+	    -webkit-border-radius: 50px;
+	    border-radius: 50px;
+	    background-color: #e0e0e0;
+	    margin-left: 160px;
+	}
+	
+	.sideLine-dot.yellow{
+		background-color: rgb(255, 192, 0);
+	}
+	
+	.sideLine-dot-title{
+	    position: absolute;
+	    margin-left: 185px;
+	    margin-top: -18px;
+	    font-weight: bolder;
+	}
+	
+}

@@ -1,0 +1,42 @@
+.lar-photoWall,.photoWall .dataList,.photoWall .arrow{
+    position: relative;
+}
+
+/*照片墙区*/
+.lar-photoWall .dataList{
+	margin:0 auto;
+}
+
+.lar-photoWall .dataList .hid {
+    position: absolute;
+    text-align:center;
+
+}
+.lar-photoWall .dataList,.lar-photoWall .dataList .hid{
+    transition:all 2s;
+}
+
+.lar-photoWall .dataList .hid .img{
+	margin:6px 12px 6px 0;
+}
+
+.lar-photoWall .dataList,.photoWall .dataList .hid img{
+    display: block;
+    margin: 0 auto;
+}
+/*按钮区*/
+.lar-photoWall .arrow{
+    width: 65px;
+    height: 35px;
+    margin: 0 auto;
+    background-image: url("images/lar-ui-icon.png") ;
+    background-position: -277px -96px;
+}
+
+.lar-photoWall .arrow:hover{
+	background-position: -342px -96px;
+}
+
+.lar-photoWall .arrow:active{
+    background-position: -406px -96px;
+}

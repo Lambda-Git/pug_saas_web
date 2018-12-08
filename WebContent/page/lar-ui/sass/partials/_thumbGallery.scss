@@ -1,0 +1,96 @@
+.thumbGalleryContainer{
+	width: 100%;
+}
+
+.thumbGalleryMainArea{
+	background-color: rgba(0,0,0,0.3);
+	width: 100%;
+  	position: relative;
+	img{
+		width: 766px;
+		height: 250px;
+	}
+  	.carousel-caption{
+	  left: 0px;
+	  bottom: 0px;
+	  width: 766px;
+	  margin-left: 5px;
+	  background-color: rgba(0, 0, 0, 0.498039);
+	  color: rgb(255, 255, 255);
+	  font-size: 18px;
+	  white-space: nowrap;
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  padding: 5px 15px;
+	  height: 4rem;
+	  line-height: 3rem;
+	}
+}
+
+.thumbGallerySideBar{
+	background-color: rgba(0,0,0,0.3);
+	display: none;
+}
+
+@media (max-width: 767px){
+	.thumbGalleryMainArea{
+		background-color: rgba(0,0,0,0);
+		text-align:center;
+		img{
+			width: 320px;
+			height: 240px;
+		}
+	  .carousel-caption{
+		width: 320px;
+		margin-left: 13px;
+	  }
+	}
+}
+
+@media (min-width: 768px){
+	.thumbGalleryContainer{
+		height: 575px;
+		width: 1000px;
+		margin: 0 auto;
+	}
+
+	.thumbGalleryMainArea, .thumbGallerySideBar{
+		display: inline-block;
+	}
+
+	.thumbGalleryMainArea{
+		width: 80%;
+		height: 100%;
+		float: left;
+		padding: 0px 5px;
+
+		img{
+			width: 766px;
+			height: 100%;
+		}
+	}
+
+	.thumbGallerySideBar{
+		img{
+			width: 180px;
+		    /*height: 160px;*/
+		    margin: 3px 0px;
+		    cursor: pointer;
+		    opacity: 0.8;
+		}	
+
+		img:hover{
+			border: 1px solid #000;
+		}	
+
+		img.selected{
+			border: 2px solid #000;
+		}
+
+		width: 20%;
+		height: 100%;
+		position: relative;
+		float: left;
+		padding-right: 10px;
+	}
+}

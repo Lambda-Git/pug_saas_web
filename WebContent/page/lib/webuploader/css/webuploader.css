@@ -1,0 +1,52 @@
+.webuploader-container {
+	position: relative;
+}
+
+.webuploader-element-invisible {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.webuploader-pick {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	width: 100%;
+}
+
+.webuploader-pick-hover {
+	background-color: #2898e0;
+	color: #fff;
+	text-decoration: none;
+}
+.webuploader-pick-hover a{
+	color: #ffffff;
+	background-color: #2898e0!important;
+}
+
+.webuploader-pick-disable {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+/*修改样式，解决高宽1px无法点击上传按钮的问题*/
+.webuploader-pick +div{
+    width: 100%!important;
+    height: 100%!important;
+}
+
+/*自定义样式*/
+.lar-upload-single .input-group .form-control {
+  z-index: auto;
+  float:none;
+}
+.lar-upload-single .progress {
+	margin-top: 8px;
+	margin-bottom: 7px;
+}
+
+

@@ -1,0 +1,184 @@
+﻿/* ==========================================================================
+   lar-ui Public
+   ========================================================================== */
+body{ margin: 0; padding: 0; font-family:"微软雅黑";}
+.icon{ background:url(./images/icon/icon.png);}
+button{ border:none;}
+ul li{ list-style:none;}
+@media (min-width: 768px){
+
+   /*登陆登出样式*/
+   .header-database .container .nav li #logout{
+      padding-left: 0px;
+   }
+
+   .userIcon,.logoutIcon{
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      background-image: url("./images/icon/icon.png");
+   }
+
+   .userName, .logoutName{
+      display: none;
+   }
+
+   .userIcon{
+      background-position: -84px -73px;
+   }
+
+   .logoutIcon{
+      background-position: -157px -73px;
+      width: 20px;
+      margin-right: 20px;
+   }
+
+   ul li.set{
+      display: none;
+   }
+}
+
+/*  lar-ui-style  第一遍切图专用 */
+.adap{ 
+   img{ width:100%;}
+}
+.center{
+   margin: 0 auto;
+}
+.hidden{
+   overflow:hidden; white-space: nowrap; -o-text-overflow: ellipsis; text-overflow:ellipsis;
+}
+
+/* ==========================================================================
+   lay-ui Font
+   ========================================================================== */
+$font-pc-14: 14px;// 14px  h5
+$font-pc-18: 18px;// 18px  h4
+$font-pc-20: 20px;// 20px  
+$font-pc-24: 24px;// 24px  h3
+
+$font-mobile-20: 20px;//
+$font-mobile-24: 24px;// h3
+$font-mobile-28: 28px;//   
+$font-mobile-36: 36px;// h1
+
+$color-base-tit: #222222;
+$color-base-con: #333333;
+$color-base-sec: #555555;
+$color-white: #ffffff;
+$color-yellow: #fdbf2d;
+
+$color-artist-lightRed: #fd1444; /* artistHall艺术家馆 红*/
+$color-activity-lightYellow: #ffe401;/* activity活动库 黄 */
+$color-periodicals-lightBlue: #74c7f4; /* periodicals典籍期刊 天蓝 */
+$color-periodicals-deepBlue: #3390c2;
+$color-organization-lightOrange: #fc9512;/* 组织团体 橙*/
+$color-opus-lightGreen: #009e96;/* 作品 暂无*/
+$color-award-lightRed: #ac003c;/* award奖节 酒红*/
+$color-award-deepRed: #950028;
+$color-news-lightBlue:#1f93ff; /* news新闻资讯 海蓝*/
+$color-encyclopedia-lightPurple: #6062aa;  /* encyclopedia百科 浅紫 */
+$color-encyclopedia-deepPurple: #4f518d;  /* encyclopedia百科 深紫 */
+
+
+/* ==========================================================================
+   lay-ui backTop组件样式
+   ========================================================================== */
+@import "sass/partials/_backTop.scss"; 
+
+/* ==========================================================================
+   lay-ui selectDict组件
+   ========================================================================== */
+@import "sass/partials/_selectDict.scss"; 
+
+/* ==========================================================================
+   lar-dynamicPage组件
+   ========================================================================== */
+@import "sass/partials/_dynamicPage.scss"; 
+
+/* ==========================================================================
+   lay-ui scroll-bar组件
+   ========================================================================== */
+@import "sass/partials/_scrollbar.scss"; 
+
+
+/* ==========================================================================
+   lay-ui integrat 展开收缩组件
+   ========================================================================== */
+@import "sass/partials/_openAndClose.scss";
+/* ==========================================================================
+   lay-ui 补充
+   ========================================================================== */
+/* tablets 做，就当作平板以上的样式是统一的 */
+@media (min-width : 768px ){} 
+/*  desktop 暂时不做 */
+@media (min-width : 992px ){}
+/* large desktop 暂时不做 */ 
+@media (min-width : 1200px ){}
+/*校验提示信息*/
+.error{
+   color: red;
+   font-size:14px;
+   font-family: "宋体";
+
+}
+.line-limit {
+   display: -webkit-box;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+}
+.specialColumn {
+   /*display:none;*/
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   background-color: #184e98;
+   .specialColumnTitle {
+      width:56px;
+      height:232px;
+      position:absolute;
+      background:url(http://www.cflac.org.cn/sywdh/sywdh.png);
+      float:left;
+      margin:-34px 0px 0px -52px;
+   }
+   .specialContent{
+      width:950px;
+      height:330px;
+   }
+}
+.specialFloatRight{
+   /*display:none;*/
+   width: 102px;
+   /*margin-top: 140px;*/
+   background: white;
+   top: 100px;
+   position: fixed;
+   right: 1px;
+   z-index: 10;
+   height:auto;
+   .text{
+      background: #e6e6e6;
+      font-size: 12px;
+      padding: 7px 11px 7px 11px;
+      margin-top: 1px;
+      text-align: center;
+   }
+   a {
+      color: #333;
+   }
+}
+@media (max-width : 1000px ){
+   .specialColumn {
+      display:none;
+   }
+   .specialFloatRight{
+      display:none;
+   }
+}
+@media (max-width : 767px ){
+   .searchHeader{
+      display:none;
+   }
+}

@@ -1,0 +1,36 @@
+.art_classfications{
+	max-width:1200px;
+	margin:0 auto;
+	padding-top:30px;
+}
+@media (max-width: 768px) {
+	.art_classfications{
+	padding-top:25px;
+	padding-bottom:-5px;
+}
+}
+.lar-galleryWrapper{
+	.inner{
+	height:120px;
+	overflow:hidden;
+	margin:0 auto;
+	}
+	.arrow{
+	height:90px;
+	line-height:90px;
+	}
+}
+.inner{
+	.galleryPic{
+	height:118px;
+	}
+}
+.below{
+	width:62px;
+	text-align:center;
+	position:absolute;
+	padding:10px 0;
+	p{
+		color: #000;
+	}
+}

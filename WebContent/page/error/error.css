@@ -1,0 +1,19 @@
+.header-bg {
+  background-color: #212933; }
+
+.errorInfo {
+  width: 100%;
+  text-align: center;
+  display: table;
+  background: -moz-radial-gradient(#FFF, #d6edff);
+  background: -webkit-radial-gradient(#FFF, #d6edff); }
+  .errorInfo .errorMsg {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+  .errorInfo img {
+    width: 100%; }
+
+@media (min-width: 768px) {
+  .errorInfo img {
+    width: 425px; } }

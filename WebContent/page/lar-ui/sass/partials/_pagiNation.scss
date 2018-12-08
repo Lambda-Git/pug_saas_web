@@ -1,0 +1,81 @@
+.pagination{ display:none;}
+
+@media (min-width : 768px ){
+    .pagination{ display:block;}
+}
+// ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝页栏全局
+.pagination-bk{
+    a{ margin:0 8px;}
+    > li > a, > li > span{ color: $color-encyclopedia-lightPurple; border:1px solid $color-encyclopedia-deepPurple;}
+    > li > a:hover, > li > span:hover{ color:#fff; background-color: $color-encyclopedia-lightPurple; border:1px solid $color-encyclopedia-deepPurple;}
+    > li:first-child > a, > li:first-child > span{ border-top-left-radius:0; border-bottom-left-radius:0; padding:6px 20px;}
+    > li:last-child > a, > li:last-child > span{ border-top-right-radius:0; border-bottom-right-radius:0; padding:6px 20px;}
+}
+@media (min-width : 768px ){
+}
+// 百科
+.pagination1{
+    padding:20px 0;
+    h3{ color:$color-base-tit;}
+    p, span{ color:$color-base-sec;}
+    p{ margin:20px 0;}
+    img{ width:100%;}
+    .relatedTerm span{ padding:6px 15px; border:1px solid #bfbfbf; margin-right:2%;}
+}
+@media (min-width : 768px ){
+    .pagination1{
+        h3{ font-size:$font-pc-20;}
+        span, p, .relatedTerm span{ font-size:$font-pc-14;}
+    }
+}
+.pagination2{
+    padding:20px 0;
+    img{ width:100%; border:10px solid #f1f1f1;}
+    span{ display:block; text-align:center; padding:10px 0; color:$color-base-tit;}
+    ul{ -webkit-padding-start: 0; color:$color-base-sec;}
+}
+@media (min-width : 768px ){
+    .pagination2{
+        span{ font-size:$font-pc-20;}
+        ul{ font-size:$font-pc-14; line-height:30px;}
+    }
+}
+.pagination3{
+    padding:20px 0;
+    border-bottom:1px dashed #ccc;
+    span{ color:$color-periodicals-lightBlue;}
+    span e{ margin-right:2%;}
+    p{ padding:10px 0;}
+    .relatedTerm span{ padding:6px 15px; border:1px solid $color-periodicals-lightBlue; margin-right:2%;}
+}
+@media (min-width : 768px ){}
+.pagination4{
+    padding:20px 0;
+    > div{ margin-bottom:20px;}
+    > div a{ background-color: #f1f1f1; display:block; padding:10px 10px 0 10px; color:$color-base-tit;}
+    img{ width:100%;}
+    span{ padding:10px 0; text-align:center; display:block;}
+}
+@media (min-width : 768px ){}
+.pagination5{
+    padding:20px 0;
+    img{ width:100%;}
+    ul{ -webkit-padding-start: 0px; color:$color-base-sec;}
+    .btn_readDownload{ float: right;}
+    .col-xs-7, .col-md-10{ padding-left:0; padding-right:0;}
+}
+@media (min-width : 768px ){
+    .pagination5{
+        .btn_readDownload{ float: right; padding-top:160px;}
+    }  
+}
+.pagination6{
+  border-bottom:1px dashed #ccc;
+  .btn_ico_readDownload button{ width:32px; height: 32px; background: url(images/icon/icon.png); background-position:-810px -35px; border:none;}
+  .btn_ico_readDownload button:last-child{  background-position:-840px -35px;}
+}
+@media (min-width : 768px ){
+    .pagination6{
+
+    }
+}

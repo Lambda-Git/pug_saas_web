@@ -1,0 +1,29 @@
+/**
+*基于bootstrap
+*/
+.audioList {
+  width: 100%;
+  height: 40px;
+  background-color: #f4f4f4;
+  line-height: 40px;
+  color: #ff9e37;
+}
+/* line 7, sass/partials/_audio.scss */
+.audioList .glyphicon-music {
+  color: #fff;
+  background-color: #ff9e37;
+  padding: 4px;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+/* line 8, sass/partials/_audio.scss */
+.audioList .glyphicon-play-circle {
+  background: transparent;
+  line-height: 1.8;
+  font-size: 18px;
+}
+/* line 9, sass/partials/_audio.scss */
+.audioList div {
+  height: 40px;
+  overflow: hidden;
+}

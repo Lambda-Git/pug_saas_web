@@ -1,0 +1,660 @@
+﻿/* ==========================================================================
+   lay-ui galley组件
+   ========================================================================== */
+   
+/*gallery组件--公共样式区*/
+.lar-galleryWrapper{
+    position: relative;
+    height:100%;
+  	width: 100%;
+}
+
+.lar-galleryWrapper .inner ,.lar-galleryWrapper .inner .galleryPic,.lar-galleryWrapper .inner .galleryPic .img,.lar-galleryWrapper .inner .galleryPic .img,.lar-galleryWrapper .inner .galleryPic .img img{
+  height: 100%;
+}
+
+/*所有的标题单行显示*/
+.lar-galleryWrapper .title{
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/*适合所有，但不适合12大门类*/
+.lar-galleryWrapper .inner .galleryPic .img img{
+  width: 100%;
+}
+
+.lar-galleryWrapper .artType .galleryPic .img img{
+  width: 100%;
+  height: 100%;
+}
+
+.lar-galleryWrapper .artType .galleryPic .img{
+  height: auto;
+}
+
+.lar-galleryWrapper a:hover{
+  text-decoration: none;
+}
+.lar-galleryWrapper .galleryPic .img{
+  width: 100%;
+  height: 100%;
+}
+
+.lar-galleryWrapper .onlyMobileSlide{
+  display: none;
+}
+
+.lar-galleryWrapper .pageSizeOne{ 
+	width:100%;
+}
+
+.lar-galleryWrapper .pageSizeTwo{
+	width:50%;
+}
+
+.lar-galleryWrapper .pageSizeThree{
+	width:33.3%;
+}
+
+.lar-galleryWrapper .pageSizeFour{
+	width:25%;
+}
+
+.lar-galleryWrapper .pageSizeFive{
+  width: 20%;
+}
+
+.lar-galleryWrapper  .pageSizeNine{
+	width:11.1%
+}
+
+.lar-galleryWrapper .pageSizeTwelve{
+	width:8.3%;
+}
+
+.lar-galleryWrapper .inner{
+	white-space:nowrap;
+}
+
+.lar-galleryWrapper .inner .galleryPic{
+display:inline-block;
+}
+
+	/*左右箭头按钮区域*/
+.lar-galleryWrapper .arrow{
+    position: absolute;
+    top:40%;
+    background-size:contain;
+    background-repeat:no-repeat;
+}
+
+.lar-galleryWrapper .arrow-left{
+    left: 0px;
+    margin-left:0px;
+}
+
+.lar-galleryWrapper .arrow-right{
+    right: 0px;
+  	margin-right: 0px;
+}
+
+.lar-galleryWrapper .arrow .img{
+	margin-top:-50%;
+}
+.lar-galleryWrapper .arrow .img:hover{
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.1);
+}
+/* 3张图片的遮罩效果区样式 */
+
+.lar-galleryWrapper .maskEffect{
+    position: relative;
+	margin:0 42px;
+	white-space:nowrap;
+	overflow: hidden;
+}
+
+/*本身只为有遮罩的设置*/
+.lar-galleryWrapper  .galleryPic{
+	text-align:center;
+	position:relative;
+	padding: 10px; //改遮罩--原值0px 10px --20160602
+    overflow: hidden;
+}
+
+.lar-galleryWrapper .maskEffect .galleryPic .title{
+	position:absolute;
+	top:0px;
+  	left: 0px;
+	bottom:0px;
+	display:table-cell;
+	width:100%;	
+	opacity: 0;
+	vertical-align:middle;	
+	transition: opacity .25s ease-in-out, background .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out, background .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out, background .25s ease-in-out;	
+}
+
+.lar-galleryWrapper .maskEffect .galleryPic .title:hover{
+  	opacity: 0.9;
+    background:rgba(255,192,0,0.9);
+  	padding-left: 10px ;
+  	padding-right: 10px;
+	      /* background: rgba(0,0,0,0.8); */
+}
+.lar-galleryWrapper .maskEffect .galleryPic .title p{
+	margin-top:30%;	
+	color:white;
+	font-size:1.2em;
+	text-align:center;
+}
+
+/* 3张图片的图文上下排版样式 */
+
+.lar-galleryWrapper .squareTitleBelow{
+	position: relative;
+	margin:0 42px;
+	white-space:nowrap;
+	overflow: hidden;
+}
+
+.lar-galleryWrapper .squareTitleBelow .galleryPic{
+	text-align:center;
+	position:relative;
+	padding:0 10px;
+	//overflow:hidden;
+}
+
+.lar-galleryWrapper .squareTitleBelow .galleryPic .title{
+	text-align:center;
+	display:inline-block;
+	height:4em;
+	overflow:hidden;
+}
+
+.lar-galleryWrapper .squareTitleBelow .imgFrame{
+  border: 4px solid #ffffff;
+}
+
+/* 12大艺术门类的gallery组件 */
+
+.lar-galleryWrapper .artType{ 
+	position: relative;
+	overflow:hidden;
+}
+
+.lar-galleryWrapper	.artType .galleryPic{
+	text-align:center;
+	position:relative;
+}
+
+.lar-galleryWrapper .artType .pageSizeTwelve , .lar-galleryWrapper  .pageSizeTwelve p{
+	text-align:center;
+}
+.lar-galleryWrapper .artType .pageSizeTwelve .title{
+	height:1.5em;
+	overflow:hidden;
+}
+
+/* 4张图片的上下排版样式 */
+/*.lar-galleryWrapper .wordRegionBelowFour{
+	position: relative;
+	margin:0 42px;
+	overflow:hidden;
+	border-radius:8px;
+}
+
+.lar-galleryWrapper .wordRegionBelowFour .galleryPic{
+	text-align:center;
+	position:relative;
+	background:rgba(255,255,255,0.1);
+}
+
+.lar-galleryWrapper .wordRegionBelowFour .pageSizeFour , .lar-galleryWrapper .wordRegionBelowFour .pageSizeFour p{
+	text-align:center;
+	padding:0px 10px;
+	margin-left:1%
+}
+.lar-galleryWrapper .wordRegionBelowFour .pageSizeFour .wordRegion{
+	height:10.5em;
+	overflow:hidden;
+	white-space:normal;
+	word-wrap: break-word;
+}
+
+.lar-galleryWrapper .wordRegionBelowFour .pageSizeFour .wordRegion .title{
+	font-weight:bold;
+}
+.lar-galleryWrapper .wordRegionBelowFour .pageSizeFour .wordRegion .desc{
+	font-size:0.75em;	
+	text-align:left;
+	display:inline-block;
+}*/
+
+/* 4张图片的上、遮罩、下排版样式 */
+.lar-galleryWrapper .bTitleMaskDes,.lar-galleryWrapper .bTitleMaskDesSquare{
+	position: relative;
+	margin:0 42px;
+	overflow:hidden;
+	border-radius:8px;
+}
+//去掉背景颜色
+/*.lar-galleryWrapper .bTitleMaskDes .galleryPic,.lar-galleryWrapper .bTitleMaskDesSquare .galleryPic{
+	text-align:center;
+	position:relative;
+	background:rgba(255,255,255,0.1);
+}*/
+
+.lar-galleryWrapper .bTitleMaskDes  .galleryPic , .lar-galleryWrapper .bTitleMaskDes .galleryPic p,.lar-galleryWrapper .bTitleMaskDesSquare  .galleryPic , .lar-galleryWrapper .bTitleMaskDesSquare .galleryPic p{
+	text-align:center;
+	padding:0px 10px;
+	//margin-left:0.8%;
+}
+
+.lar-galleryWrapper .bTitleMaskDes  .galleryPic .img img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+.lar-galleryWrapper .bTitleMaskDesSquare  .galleryPic .img img{
+  width: 100%;
+}
+
+.lar-galleryWrapper .bTitleMaskDes .galleryPic .wordRegion,.lar-galleryWrapper .bTitleMaskDesSquare .galleryPic .wordRegion{
+	height:10.5em;
+	overflow:hidden;
+	white-space:normal;
+	word-wrap: break-word;
+}
+
+.lar-galleryWrapper .bTitleMaskDes  .desc,.lar-galleryWrapper .bTitleMaskDesSquare .desc{
+	position:absolute;
+	top:0px;
+	bottom:32px;
+	display:table-cell;
+	left:10px;
+	opacity: 0;
+	vertical-align:middle;
+	white-space:normal;
+	word-break:normal;
+	overflow:hidden;
+	transition: opacity .25s ease-in-out, background .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out, background .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out, background .25s ease-in-out;	
+}
+
+/*圆形遮罩*/
+.lar-galleryWrapper .bTitleMaskDes  .desc{
+  border-radius:50%;
+  padding: 15%;
+}
+/*方形遮罩*/
+.lar-galleryWrapper .bTitleMaskDesSquare .desc{
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;;
+}
+
+.lar-galleryWrapper .bTitleMaskDesSquare  .desc:hover{
+	opacity: 0.8;
+}
+
+.lar-galleryWrapper .bTitleMaskDes .title, .lar-galleryWrapper .bTitleMaskDesSquare .title{
+  height: 32px;
+  line-height: 32px;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+/* 3张图片的上下排版,加上艺术类别样式 */
+
+.lar-galleryWrapper .bwordRegionArtType{
+	position: relative;
+	margin:0 42px;
+	overflow:hidden;
+	border-radius:8px;
+}
+
+.lar-galleryWrapper .bwordRegionArtType .pageSizeThree{
+  width: 31.3%;
+  margin:0 1%;
+  padding: 0px;
+}
+
+.lar-galleryWrapper .bwordRegionArtType .galleryPic{
+	text-align:center;
+	position:relative;
+	background:rgba(0,0,0,0.2);
+  	border-radius: 4px;
+}
+
+.lar-galleryWrapper .bwordRegionArtType .galleryPic .img img{
+	width:100%;
+}
+
+ .lar-galleryWrapper .wordRegionBelowFour .pageSizeThree p{
+	text-align:center;
+	padding:0px 10px;
+	margin-left:1%
+}
+
+.lar-galleryWrapper .bwordRegionArtType .pageSizeThree .wordRegion{
+	height:8.5em;
+	overflow:hidden;
+	white-space:normal;
+	word-wrap: break-word;
+ 	padding: 0px 16px 10px 16px;
+  	text-align: left;
+}
+
+.lar-galleryWrapper .bwordRegionArtType .pageSizeThree .wordRegion .title{
+	font-weight:bold;
+}
+.lar-galleryWrapper .bwordRegionArtType .pageSizeThree .wordRegion .desc{
+	font-size:0.75em;
+	text-align:left;
+	display:inline-block;
+  	height:4em ;
+  	overflow: hidden;
+}
+
+.lar-galleryWrapper .bwordRegionArtType .artType{
+	position:absolute;
+	top:10px;
+	width:4em;
+	display:table-cell;
+	right:0px;
+	background:url("./images/responsive/artTypeBgPic.png");
+}
+
+/* 每次显示2行2列的gallery */
+
+.lar-galleryWrapper .twoRowsGallery .arrow{
+	top:45%;
+}
+
+.lar-galleryWrapper .twoRowsGallery{
+	position:relative;
+	margin:0 42px;
+	white-space:nowrap;
+	overflow: hidden;
+}
+
+.lar-galleryWrapper .twoRowsGallery .galleryPic{
+	width: 50%;
+  	padding: 0px;
+}
+
+.lar-galleryWrapper .twoRowsGallery .galleryPic .imgArea{
+	 width: 100%;
+  	 height: 50%;
+     display: block;
+     text-align: center;
+     overflow: hidden;
+  	 position: relative;
+  	 padding: 6px 0;
+}
+
+.lar-galleryWrapper .twoRowsGallery .galleryPic .imgArea img{
+  width: 100%;
+  height:100%;
+}
+
+.lar-galleryWrapper .twoRowsGallery .galleryPic .imgArea .title{
+  position: absolute;
+  bottom: 1rem;
+  left: 0px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+}
+/* 4张图片的上下排版样式-有简介 */
+.lar-galleryWrapper .wordRegionBelowFour{
+  position: relative;
+  margin:0 42px;
+  overflow:hidden;
+  border-radius:8px;
+}
+
+.lar-galleryWrapper .wordRegionBelowFour .galleryPic{
+  padding: 0px 6px;
+}
+
+.lar-galleryWrapper .wordRegionBelowFour .galleryPic > div{
+  text-align:center;
+  position:relative;
+  background:rgba(255,255,255,0.1);
+  padding: 12px;
+  height: 100%;
+}
+
+.lar-galleryWrapper .wordRegionBelowFour .galleryPic .img img{
+  border-radius: 50%;
+}
+
+.lar-galleryWrapper .wordRegionBelowFour .pageSizeFour p{
+  text-align:center;
+  padding:0px 10px;
+  //margin-left:1%
+}
+.lar-galleryWrapper .wordRegionBelowFour .pageSizeFour .wordRegion{
+  overflow:hidden;
+  white-space:normal;
+  word-wrap: break-word;
+  color: #ffffff;
+}
+
+.lar-galleryWrapper .wordRegionBelowFour .pageSizeFour .wordRegion .title{
+  font-weight:bold;
+}
+.lar-galleryWrapper .wordRegionBelowFour .pageSizeFour .wordRegion .desc{
+  font-size:0.75em;
+  text-align:left;
+  display:inline-block;
+}
+
+/*每屏显示1条记录，左右排版*/
+
+.lar-galleryWrapper .wordRegionRight{
+  position: relative;
+  margin:0 42px;
+  overflow:hidden;
+  border-radius:8px;
+}
+
+.lar-galleryWrapper .wordRegionRight .galleryPic{
+  text-align:left;
+  position:relative;
+  background:rgba(255,255,255,0.1);
+  position: relative;
+}
+
+.lar-galleryWrapper .wordRegionRight .galleryPic .img{
+  display: inline-block;
+  width: 45%;
+  overflow: hidden;
+  text-align:center;
+}
+
+.lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion{
+  display: inline-block;
+  overflow:hidden;
+  white-space:normal;
+  word-wrap: break-word;
+  width: 53%;
+  margin-left:2%;
+  vertical-align:top;
+  color:black;
+  font-family:"微软雅黑";
+}
+
+.lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion p{
+  color:black;
+}
+
+.lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion .title{
+  font-size:22px;
+  line-height:4rem;
+  height:4rem;
+}
+
+.lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion .bottomBorder{
+  display:block;
+  width:3rem;
+  border-bottom:2px solid #fc9510;
+}
+
+.lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion .desc{
+  display:inline-block;
+  font-size:15px;
+  //height:14rem;
+  overflow:hidden;
+  
+}
+
+
+.lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion .gotoDetail{
+  display:inline-block;
+  background:#fc9510;
+  padding:1px 20px;
+  border-radius:16px;
+  position: absolute;
+  bottom: 1rem;
+}
+
+.lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion .gotoDetail span{
+  color:#ffffff;
+}
+
+.lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion .gotoDetail span.tip{
+  display:inline-block;
+  vertical-align:top;
+  margin-top:10px;
+  font-size:16px;
+  margin-right:10px;
+}
+
+.lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion .gotoDetail .gotoIcon{
+  display:inline-block;
+  width:37px;
+  height:37px;
+  background:url(./images/icon/icon.png) -1342px -28px;
+}
+
+/* 基于bootstrap的二次封装,一张图片的轮训 */
+.oneSlide .carousel-inner .item a{
+  display: inline-block;
+}
+
+.oneSlide,.oneSlide .carousel-inner,.oneSlide .carousel-inner .item,.oneSlide .carousel-inner .item a{
+  height: 100%;
+  width: 100%;
+}
+
+.oneSlide .item img{
+	margin:0 auto;
+  	width:100%;
+}
+
+.oneSlide .carousel-caption{
+	display:inline-block;
+	background-color: rgba( 0,0,0,0.5);
+	left:0px;
+	bottom: 0px;
+	width:100%;
+	right:auto;
+	padding:5px 15px;
+	overflow:hidden;
+	height:4rem;
+  	line-height:3rem;
+}
+
+.oneSlide .carousel-indicators{
+	bottom:0px;
+}
+
+.oneSlide .carousel-control{
+	top:40%;
+	background-image:none;
+  	width: auto;
+}
+
+.oneSlide .carousel-control img{
+	margin-top:-50%;
+}
+
+@media (max-width: 768px) {
+  .lar-galleryWrapper .onlyMobileSlide{
+	display: block;
+  }
+
+  .lar-galleryWrapper .twoRowsGallery .galleryPic .imgArea .title{
+	  position: absolute;
+	  bottom: 0rem;
+	  left: 2px;
+	}
+
+  .lar-galleryWrapper .pageSizeOne,.lar-galleryWrapper .pageSizeTwo,.lar-galleryWrapper .pageSizeThree,.lar-galleryWrapper .pageSizeFour,.lar-galleryWrapper .pageSizeFive{
+	width: 99%;
+  }
+  .lar-galleryWrapper .pageSizeTwelve, .lar-galleryWrapper .pageSizeNine{
+	width: 24%;
+  }
+
+  .lar-galleryWrapper .bwordRegionArtType .pageSizeThree{
+	width: 99%;
+  }
+
+  .oneSlide .carousel-caption{
+	bottom: 6px;
+	height:4rem;
+	line-height:3rem;
+  }
+
+  .carousel-control img{
+	height: 60%;
+  }
+
+  /*两行两列的样式*/
+
+  .lar-galleryWrapper .twoRowsGallery .galleryPic{
+	display:block;
+	width: 100%;
+	height: 50%;
+  }
+
+  .lar-galleryWrapper .twoRowsGallery .galleryPic .imgArea{
+	width: 100%;
+	display: block;
+	padding-bottom: 3px;
+  }
+
+  /*每屏显示1条记录，左右排版*/
+  .lar-galleryWrapper .wordRegionRight .galleryPic .img{
+	display: block;
+	width: 100%;
+  }
+
+  .lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion{
+	display: block;
+	width: 100%;
+  }
+
+  .lar-galleryWrapper .wordRegionRight .galleryPic .wordRegion .gotoDetail{
+	bottom: 0px;
+	padding: 0px 32px;
+	min-width: 175px;
+	min-height: 42px;
+  }
+
+  /*资源展示首页9个图标*/
+  .lar-galleryWrapper .artType .pageSizeNine{
+	padding: 5px;
+  }
+}
+

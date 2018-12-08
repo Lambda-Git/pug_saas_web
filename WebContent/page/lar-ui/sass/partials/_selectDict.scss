@@ -1,0 +1,13 @@
+   .lar-selectDict{   		
+   		width:100%;
+   		min-width:5em;
+   		height:2.5em;
+		line-height:2.5em;
+		background:#f4f4f4;
+		border:1px solid #d7d7d7;
+   }
+
+   .lar-spin {
+  -webkit-animation: lar-spin 2s infinite linear;
+  animation: lar-spin 2s infinite linear;
+}

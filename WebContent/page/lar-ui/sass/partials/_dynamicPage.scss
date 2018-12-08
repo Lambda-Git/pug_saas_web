@@ -1,0 +1,202 @@
+﻿/* ==========================================================================
+   lay-ui lar-dynamicPage组件样式
+   ========================================================================== */
+.lar-dynamicPage .resultList{
+    padding: 0px;
+    margin:  12px 0px 0px 0px;
+}
+.lar-dynamicPage .loadAll {
+    text-align: center;
+    color: #666;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display:none;
+}
+
+.lar-dynamicPage .resultList .tipNoData{
+    text-align:center;
+}
+
+.lar-dynamicPage .resultList   li, .lar-dynamicPage .pagesList  li{
+    list-style-type: none;
+    position: relative;
+    padding:0px 0px 0px 56px;
+    font-family: "Microsoft YaHei";
+}
+
+.lar-dynamicPage .resultList  li em{
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    /* width: 3.5em; */
+    padding: 0px 10px;
+    display: inline-block;
+    font-size: 29px;
+    font-style: normal;
+    color: #999999;
+}
+
+.lar-dynamicPage .resultList  li a{
+    width: 128px;
+    display: inline-block;
+    color: #999;
+    line-height: 32px;
+    vertical-align: top;
+}
+
+
+
+/*页码区*/
+.lar-dynamicPage{
+    box-sizing:content-box;
+}
+
+.lar-dynamicPage .pagesList{
+    padding-left:0px;
+    margin-top:16px;
+    display: inline-block;
+    width: 100%;
+}
+
+.lar-dynamicPage .pagesList .liList{
+    /*display:inline-block;*/
+    text-align: center;
+}
+
+.lar-dynamicPage .pagesList li{
+    float: left;
+    display: inline;
+    width: 20px;
+    text-align: center;
+    font-family: "Droid Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 12px;
+    margin: 6px;
+    height: 12px;
+    line-height: 12px;
+    border: 1px solid #cd8802 ;
+    border-radius: 3px;
+    color: #7d7d7d;
+    box-sizing:content-box;
+}
+
+.lar-dynamicPage .pagesList li:hover{
+    cursor: pointer;
+}
+
+.lar-dynamicPage .pagesList li.more , .lar-dynamicPage .pagesList li.total , .lar-dynamicPage .pagesList li.go{
+    border: 0;
+}
+
+.lar-dynamicPage .pagesList li.total{
+    width: auto;
+    padding: 12px 0px;
+    margin: 0px;
+    margin-top: 8px;
+}
+
+.lar-dynamicPage .pagesList .pageNum:hover , .lar-dynamicPage  .pagesList li.active{
+    background-color: #cd8802;
+    box-shadow: 1px 1px 1px 1px  #999;
+    color: #fdfdfd;
+}
+
+.lar-dynamicPage .pagesList .pageNum span:hover , .lar-dynamicPage  .pagesList li.active span{
+    color: #fdfdfd;
+}
+
+.lar-dynamicPage .pagesList li.go{
+    width: 96px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    /*padding-top: 2px;*/
+}
+
+.lar-dynamicPage .pagesList li span{
+    padding: 0px;
+    display: inline;
+    font-size: 16px;
+    color: rgb(205, 136, 2);
+    font-family: "Droid Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.lar-dynamicPage .pagesList li .pageNumber{
+    width: 40px;
+    height: 32px;
+}
+
+.lar-dynamicPage .pagesList li .pageNumber:focus {
+    border: 1px solid #cd8802;
+    background-color:#cd8802 ;
+}
+
+.lar-dynamicPage .pagesList li.ensure{
+    border: 1px solid #cd8802 ;
+    border-radius: 2px;
+    width: 48px;
+    height: 32px;
+    line-height: 32px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 8px;
+    /*padding-top: 2px;*/
+}
+
+.lar-dynamicPage .pagesList li.ensure span{
+    width: 64px;
+    height: 40px;
+}
+
+.lar-dynamicPage .pagesList li.ensure:hover{
+    background-color: #cd8802 ;
+}
+
+.lar-dynamicPage .pagesList li.totalNum{
+    border: none;
+    width: auto;
+    padding-top: 13px;
+}
+
+.lar-dynamicPage .nextPageContainer{
+    display: none;
+}
+@media (min-width: 768px) {
+    .lar-dynamicPage .nextPageContainer{
+        display:none;
+        span{
+            display:none;
+        }
+    }
+}
+@media (max-width: 768px) {
+    //.lar-dynamicPage .pagesList .liList{
+    //    margin-left: 0px;
+    //}
+    .lar-dynamicPage .pagesList{
+        display:none;
+    }
+    .lar-dynamicPage .nextPageContainer{
+        display: block;
+        text-align: center;
+        position: relative;
+    }
+    .lar-dynamicPage .nextPageContainer span.nextPageBtn{
+        display: inline-block;
+        width: 70px;
+        height: 40px;
+        margin-top: 16px;
+        background: url(../images/icon/icon.png) -404px -325px; //328
+
+    }
+    .lar-dynamicPage .nextPageContainer span.mobilePageInfo{
+        display: inline-block;
+        height: 40px;
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+        padding-right: 15px;
+        color: #999;
+    }
+}

@@ -1,0 +1,30 @@
+extends ../common/common
+block head
+	block metas
+		+commonMeta
+	block links
+		+commonLink('../')
+		link(rel="stylesheet", href= "../error/error.css")
+	block scripts
+		+commonScript('../')
+		script(src="../error/error.js")
+	block title
+		title 帐号信息
+block body
+	section.center-header
+		div.header-bg 
+			div.container
+				div.navbar-header.clearfix
+					div.logo
+						img(src="../images/logo.png")
+	block content
+		div.errorInfo
+			div.errorMsg
+				img(src="../images/404.png")
+	section.center-footer
+		div.copyright
+			p 中国文联组联 版权所有 京ICP备14006586-1号 京公网安备11010502025169号
+			p Copyright  2013-2016 LITERARY AND ART RESOURCE CENTER.CFLAC  All Rights Reserved
+				
+
+

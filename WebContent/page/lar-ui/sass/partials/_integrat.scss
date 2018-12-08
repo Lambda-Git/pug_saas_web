@@ -1,0 +1,162 @@
+// 图文混排1
+.integrat1{
+    margin-bottom:50px;
+    img{ width:100%;}
+    .integrat-p{ margin-top: 15px;}
+    a{ display:block; color: $color-base-tit; border:1px solid #c5996c; background-color:#fff; padding:25px 20px;}
+    a:hover{ color: $color-white; border:1px solid #c5996c; background-color:#ffc000;}
+    .icon_pic{ width:80px; height:60px; background-position: -1200px -315px;}
+    h4{ font-size: $font-mobile-20;}
+    p{}
+}
+@media (min-width: 767px) {
+    .integrat1{
+            margin-bottom:15px;
+            .integrat-tit{ margin-top: 0;}
+            .integrat-p{ margin-top: 0;}
+            a{ color: $color-base-tit;}
+            a:hover{ color: $color-white;}
+            h4{ font-size: $font-mobile-20;}
+            p{}
+    }
+}
+// 图文混排2
+.integrat2{
+    img{ width:100%;}
+    padding-bottom:50px;
+    .icon-news{ width:100px; height:100px; background-position:-600px -650px; margin-top:10px;}
+    h3{ font-size:$font-mobile-20; color:$color-base-tit;}
+    a{ color:$color-base-tit;}
+}
+@media (min-width: 767px){
+    .integrat2{
+        padding-bottom:20px;
+        h3{ font-size:$font-pc-24; color:$color-base-tit; margin-top:20px;}
+        a{ color:$color-base-tit;}
+    }
+}
+
+/*  1.7.9.6 图文混排6 ／首页 */
+.integrat6{
+    margin-bottom:30px;
+    img{ width:100%; height: 90px;}
+    a{ background-color:#001925; color:$color-white; display:block; padding:3% 4% 6% 4%; border: none;}
+    a:hover{ background-color:#ffc000; color:$color-white; text-decoration:none; border: none;}
+    h3{ font-size:14px; height:14px; overflow: hidden;}
+    p{ font-size: 10px; height:35px; overflow: hidden;}
+}
+@media (min-width: 767px){
+    .integrat6{
+        margin-bottom:0;
+        img{ width:100%; height: 146px;}
+        p{ height:80px; overflow: hidden;}
+        h3{ font-size: 16px; font-size:$font-pc-18; height:20px; margin-top: 15px; margin-bottom: 10px;}
+        p{ font-size: 14px; height:60px; overflow: hidden;}
+    }
+}
+
+/*  1.7.9.3 图文混排3 ／活动资源 获奖情况 */
+.integrat3{
+    margin-bottom:20px;
+    span{ display:block; text-align: center; padding: 15px 0;}
+    .pic{
+        width: 100%; position: relative;
+        img{ width: 100%; height: 120px;}
+        .mask{
+            padding: 20px 0 0 0; display: block; height:100%; position: absolute; z-index: 10; text-align: center; left: 0; top: 0; opacity: 0; width:100%;
+            &:hover{ z-index:10; background-color: $color-activity-lightYellow; opacity: 1;}
+        }
+    }
+}
+
+@media (min-width: 767px){
+    .integrat3{
+        margin-bottom:30px;
+        span{ display:none;}
+        .pic{
+            img{ width: 100%; height: 200px;}
+            .mask{ padding: 60px 0 0 0; text-decoration:none;}
+        }
+      }
+}
+
+/*  integrat_8 */
+.integrat_8{
+	margin-bottom: 20px;
+    img{ width:100%; height: 235px;}
+    h3{ margin-top: 15px; margin-bottom: 30px; font-size: 18px; color:$color-base-tit; overflow:hidden;}
+    h3 .icon{ width: 16px; height:16px; background-position:-547px -43px; display:inline-block; margin-right: 7px;}
+    h3 a{ color: #222;}
+    p{ font-size:10px; color: $color-base-sec; text-indent:24px; margin-top: 20px; height:150px; overflow:hidden; line-height: 2.2;}
+    .integrat_8-left{display:none;}
+}
+
+@media (min-width: 767px){
+    .integrat_8{
+        img{ width:100%; height: 215px;}
+        h3{ font-size: $font-pc-20;}
+        p{ font-size: 14px; margin-top: 0; height:120px;}
+        .integrat_8-left{ float:left; display:block;}
+        .integrat_8-right{
+            img{ display: none;}
+         }
+    }
+}
+
+/*  1.7.9.5 图文混排4 ／百科／首页 人物百科 */
+.integrat4{
+    img{ width:100%;}
+    display:none;
+}
+
+@media (min-width: 767px){
+    .integrat4{
+        display:block;
+        h2{ display:block;}
+        .integrat4-con{ 
+            div{ padding:1% 2%;}
+            a{ display: block; border:1px solid #adaed2; padding:2px;}
+            a:hover{ border:2px solid #6062aa; padding:0;}
+            span{ display:block; text-align:center; padding:8% 0;}
+        }
+    }
+}
+
+/*  1.7.9.3 图文混排5 ／活动资源／获奖情况 评奖委员 */
+.integrat5{
+    .tit{
+        display: table; margin: 0 auto; font-size: $font-mobile-20;
+        strong{ font-size: $font-mobile-24; margin:0 5px 0 10px;} 
+        &>div{ display:table-cell ;vertical-align: middle;}
+        .icon-portrait{ width:64px; height:64px; background-position:-88px -400px;}
+    }
+    p{ font-size: $font-mobile-20; color: $color-base-sec; max-height: 140px; overflow: hidden; margin:30px 0 50px 0;}
+}
+    
+
+@media (min-width: 767px){
+    .integrat5{
+    .tit{
+        font-size: $font-pc-18;
+        strong{ display:inline-block; font-size: $font-pc-24; margin:0 5px 0 20px;}
+        }
+    p{ font-size: $font-pc-14; height: 120px; overflow:hidden; margin:30px 0 30px 0;}
+    }
+}
+
+/*  1.7.9.3 1.7.9.5 图文混排7 ／典籍期刊／图书详情页 艺术与观念 */
+.integrat7{
+    img{ width:100%;}
+    img{ border:6px solid #f1f1f1;}
+    h4{ padding:2px 0;}
+    ul{ list-style:none; -webkit-padding-start:0;}
+    button{ background-color:#fff; border:1px solid #999999; color:#999999; padding:0 8%;}
+    button:hover{ border:1px solid $color-periodicals-deepBlue; color:$color-periodicals-deepBlue;}
+    .integrat7-btn{ margin-top:0;}
+    // .integrat7-btn{ width:20%; margin:0 auto; padding: 10px 0;
+}
+@media (min-width: 767px){
+    .integrat7{
+        .integrat7-btn{ margin-top:200px;}
+    }
+}

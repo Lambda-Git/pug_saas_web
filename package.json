@@ -1,0 +1,26 @@
+{
+  "name": "wyxm-expert-search-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "init": "^0.1.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-connect": "^5.5.0",
+    "gulp-debug": "^3.2.0",
+    "gulp-if": "^2.0.2",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.2.1",
+    "gulp-uglify": "^3.0.1",
+    "http-proxy-middleware": "^0.17.4",
+    "minimist": "^1.2.0"
+  }
+}
