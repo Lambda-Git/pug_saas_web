@@ -1,2 +1,3 @@
-
-*.pug linguist-language=pug
+*.js linguist-language=pug+sass
+*.pug linguist-language=pug+sass
+*.scss linguist-language=pug+sass
